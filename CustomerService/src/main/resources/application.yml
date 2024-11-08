@@ -1,0 +1,42 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/customerDB
+    username: postgres
+    password: Anurodh@1708
+  jpa:
+    hibernate:
+      ddl-auto: update
+  application:
+    name: customer-service
+  output:
+    ansi:
+      enabled: ALWAYS
+  main:
+    allow-bean-definition-overriding: true
+
+
+rabbitmq:
+  exchange: amount_service_exchange
+  order:
+    queue: order_info_queue
+    routing-key: order_info_key
+  payment:
+    queue: payment_info_queue
+    routing-key: payment_info_queue
+
+
+okta:
+  oauth2:
+    issuer: https://dev-82346525.okta.com/oauth2/default
+    client-id: 0oah04990mKnOe4do5d7
+    client-secret: ifYywC9rvEOZaLM73xl4fScQ55IYJBeWfRg90xTE6os9ROAG0uYGnxIgdTCRJZyU
+    redirect-uri: /authorization-code/callback
+    scopes: openid
+    groups-claim: groups
+  app:
+    id: 0oah04990mKnOe4do5d7
+    role:
+      customer:
+        id: 00gh2ngwx6KARXqWn5d7

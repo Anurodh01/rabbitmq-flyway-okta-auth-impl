@@ -1,0 +1,15 @@
+CREATE TABLE products (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    count INT NOT NULL,
+    cost DOUBLE PRECISION NOT NULL
+);
+
+CREATE TABLE orders (
+    id SERIAL PRIMARY KEY,
+    customer_id VARCHAR(255) NOT NULL,
+    product_id INTEGER NOT NULL,
+    quantity INTEGER NOT NULL,
+    status VARCHAR(255) NOT NULL,
+    order_date TIMESTAMP WITHOUT TIME ZONE NOT NULL
+);
