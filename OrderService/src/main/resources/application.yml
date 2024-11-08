@@ -20,8 +20,8 @@ spring:
       client:
         registration:
           okta:
-            clientId: 0oah04990mKnOe4do5d7
-            clientSecret: ifYywC9rvEOZaLM73xl4fScQ55IYJBeWfRg90xTE6os9ROAG0uYGnxIgdTCRJZyU
+            clientId: id
+            clientSecret: secret
             authorizationGrantType: client_credentials
             scope: data_access
         provider:

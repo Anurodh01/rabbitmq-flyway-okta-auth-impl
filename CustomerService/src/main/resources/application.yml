@@ -30,13 +30,13 @@ rabbitmq:
 okta:
   oauth2:
     issuer: https://dev-82346525.okta.com/oauth2/default
-    client-id: 0oah04990mKnOe4do5d7
-    client-secret: ifYywC9rvEOZaLM73xl4fScQ55IYJBeWfRg90xTE6os9ROAG0uYGnxIgdTCRJZyU
+    client-id: id
+    client-secret: secret
     redirect-uri: /authorization-code/callback
     scopes: openid
     groups-claim: groups
   app:
-    id: 0oah04990mKnOe4do5d7
+    id: id
     role:
       customer:
-        id: 00gh2ngwx6KARXqWn5d7
+        id: id
