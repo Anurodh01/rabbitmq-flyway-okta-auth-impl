@@ -6,7 +6,7 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/orderDB
     username: postgres
-    password: Anurodh@1708
+    password: root
 #  jpa:
 #    hibernate:
 #      ddl-auto: update
